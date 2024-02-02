@@ -1,0 +1,52 @@
+<div id="navbar">
+    <div class="row">
+
+        <nav id="nav-main">
+            <div id="logo">
+                <a href="/home"><img src="../assets/images/Namma Resort-logos_transparent_2.png" /></a>
+            </div>
+            <ul id="sidebar" (click)="hideSideBar()">
+                <li routerLinkActive="active"><a routerLink="/home">Home</a></li>
+                <li routerLinkActive="active"><a routerLink="/about">About</a></li>
+                <li routerLinkActive="active"><a routerLink="/gallery">Gallery</a></li>
+                <li routerLinkActive="active"><a routerLink="/contact">Contact Us</a></li>
+                <li routerLinkActive="active"><a routerLink="/pricing">Pricing</a></li>
+            </ul>
+            <ul>
+                <li class="hideOnSmallScreen" routerLinkActive="active"><a routerLink="/home">Home</a></li>
+                <li class="hideOnSmallScreen" routerLinkActive="active"><a routerLink="/about">About</a></li>
+                <li class="hideOnSmallScreen" routerLinkActive="active"><a routerLink="/gallery">Gallery</a></li>
+                <li class="hideOnSmallScreen" routerLinkActive="active"><a routerLink="/contact">Contact</a></li>
+                <li class="hideOnSmallScreen" routerLinkActive="active"><a routerLink="/pricing">Pricing</a></li>
+                <li class="hideOnBigScreen" (click)="showSideBar()"><a><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24" viewBox="0 -960 960 960" width="24">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+            <aside>
+                <ul class="nav-social-icons">
+                    <li>
+                        <a target="_blank" title="Whatsapp" href="https://web.whatsapp.com/">
+                            <i class="fa fa-whatsapp fa-1x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" title="Youtube" href="http://youtube.com">
+                            <i class="fa fa-youtube fa-1x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
+                            <i class="fa fa-facebook fa-1x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
+                            <i class="fa fa-instagram fa-1x"></i>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </nav>
+    </div>
+</div>

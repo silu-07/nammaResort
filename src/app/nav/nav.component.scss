@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#navbar {
+    height: 71px !important;
+    width: 100%;
+    z-index: 9999;
+    position: fixed !important;
+    font-size: 18px;
+    background-color: #14274f;
+    font-family: send-serif;
+}
+
+/* logo */
+
+#logo {
+    text-align: left;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    line-height: 66px;
+}
+
+#logo img {
+    max-height: 75px;
+    ;
+}
+
+/* Navigation */
+
+#navbar ul {
+    text-align: center;
+}
+
+#navbar li {
+    display: inline-block;
+}
+
+#navbar nav a {
+    text-decoration: none;
+    line-height: 71px;
+    padding: 0 10px;
+    color: #ece7e3;
+    display: block;
+}
+
+#navbar nav a:hover {
+    opacity: 0.7;
+}
+
+/* Social icons */
+
+#navbar aside .nav-social-icons {
+    text-align: right;
+    position: absolute;
+    top: 0px;
+    right: 70px;
+}
+
+/* Active Link outline */
+.active {
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #14274f;
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    // align-items: flex-start;
+    // justify-content: flex-start;
+}
+
+#sidebar li {
+    border-bottom: solid 0.1px #ece7e3;
+    ;
+}
+
+/* Hide Nav bar details for mobile and show hamburger icon  */
+@media screen and (max-width: 1180px) {
+    #nav-main .hideOnSmallScreen {
+        display: none;
+    }
+
+    #navbar aside .nav-social-icons {
+        display: none;
+    }
+
+    #navbar li {
+        float: inline-end;
+        padding: 0px 10px;
+    }
+
+    #navbar nav a svg {
+        background-color: #ece7e3;
+        border-radius: 5px;
+    }
+}
+
+/* Hide ham burger icon for large screen   */
+@media screen and (min-width: 1180px) {
+    #navbar nav ul .hideOnBigScreen {
+        display: none;
+    }
+}
+
+/*For mobile show sidebar as 100% width & shift logo to left with smaller size*/
+@media screen and (max-width: 431px) {
+    #sidebar {
+        width: 100%;
+    }
+
+    #logo {
+        left: 0px;
+    }
+
+    #logo img {
+        max-height: 55px;
+        ;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    #logo img {
+        display: none;
+    }
+}
